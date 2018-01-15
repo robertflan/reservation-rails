@@ -1,0 +1,37 @@
+$( document ).on('turbolinks:load',function() {
+    $('.datepicker-days').css('display','block');
+
+    $('.reserve-count').click(function(){
+    	$('.reserve-count').removeClass('reserve-count-border');
+    	$(this).addClass('reserve-count-border');
+    })
+    $('.person_more').click(function() {
+    	/* Act on the event */
+    	$('.reserve-select-more').show();
+    });
+
+    $('.reserve_time').hide();
+    $('.date-next').hide();
+    $('.reserve-select-more').hide();
+
+    $('.more-time div').click(function(){
+    	$('.reserve_time').show('slow');
+    	$('.date-next').show();
+    	var target = $(this);
+       $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+    })
+    $('.reserve_time_item').click(function(){
+    	$('.reserve_time_item').removeClass('time_item_active');
+    	$(this).addClass('time_item_active');
+    })
+    /* confirm info*/
+    var guest = "";
+    $('.resreve-count-container').click(function(){
+    	guest = $(this).children().text();
+    	//alert(guest);
+    	$('.guest_person').html(guest);
+    })
+
+});

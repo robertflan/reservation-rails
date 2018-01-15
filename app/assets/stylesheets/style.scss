@@ -1,0 +1,230 @@
+.body {
+	min-width: 325px;
+}
+.main-container{
+	padding: 10px;
+	width: 60%;
+	margin-left: 20%;
+	.reserve-main-login{
+		margin-top: 200px;
+	}
+}
+.reserve-left-back{
+	margin-top: 0px;
+	background: #55a3ea;
+	height: 100vh;
+
+}
+.reserve-header{
+	padding: 30px 50px;
+	background: #d64141;
+	margin-top: 40px;
+	border: 1px solid #d64141;
+	.resreve-number-container{
+		margin: auto;
+		text-align: center;
+	}
+	.reserve-number{
+		display: inline-block;
+		vertical-align: middle;
+		margin:0px auto;
+		font-size: 30px;
+		min-width: 30px;
+		flex-wrap: wrap;
+		width: 5vw;
+		padding: calc(2.5vw - 15px);
+		zoom: 1;
+		border-radius: 50%;
+		background: #DCDCDC;
+		text-align: center;
+		line-height: 1;
+	}
+	.reserve-number span{
+		margin: auto;
+		vertical-align: middle;
+		z-index: 10;
+	}
+	.reserve-number-first{
+		// margin-left: 20px;
+	}
+	.reserve-number-last{
+		// margin-right: 30px;
+	}
+
+}
+.reserve-main{
+	padding: 20px 40px;
+	border: 1px solid #bce8f1;
+	.reserve-main-title{
+		color: #d64141;
+	}
+	.reserve-count-first{
+		padding: 40px 30px 20px 30px;
+	}
+	.resreve-count-container{
+		margin: auto;
+		text-align: center;
+	}
+	.reserve-count{
+		width: 7vw;
+		padding: calc(3.5vw - 20px);
+		background: #DCDCDC;
+		display: inline-table;
+		text-align: center;
+		font-size: 40px;
+		min-width: 50px;
+		margin: auto;
+		vertical-align: middle;
+		line-height: 1;
+		border: 3px solid #DCDCDC;
+	}
+	.reserve-count-border{
+		border: 3px solid #d64141;
+	}
+	.reserve-count:hover{
+		border: 3px solid #d64141;
+		cursor: pointer;
+	}
+	.reserve-count:visited{
+		border: 3px solid #d64141;
+	}
+	.reserve-count-second{
+		margin-top: 20px;
+		padding:0px 30px
+	}
+	.reserve-next{
+		padding: 10px 40px;
+	}
+	.reserve-next button{
+		width: 100%;
+		font-size: 25px;
+		text-transform: uppercase;
+		background: #C8C8C8; 
+		color: #fff;
+	}
+	.reserve-select-more{
+		padding: 20px 40px;
+	}
+	.reserve-select-more select{
+		padding: 10px 20px;
+		width: 100%;
+		height: 40px;
+		line-height: 20px;
+	}
+	.person_more:hover{
+		cursor: pointer;
+	}
+}
+.reserve-result-page{
+	margin-top: 200px;
+}
+.datepicker-days{
+	display: block;
+	text-align: center;
+	table{
+		margin: 0 auto;
+	}
+}
+.timepicker-picker {
+	display: none;
+}
+.datepicker-days table tr td{
+	padding: 14px 26px;
+	font-size: 30px;
+}
+.more-time{
+	padding: 20px 20px;
+	div{
+		margin: 0px auto;
+		font-size: 30px;
+		font-weight: 200;
+	}
+}
+.reserve_time_item{
+	background: #C8C8C8;
+	padding: 10px 20px;
+	margin-top: 20px;
+	min-width:300px; 
+	div{
+		vertical-align: middle;
+		height: 40px;
+	}
+	div p{
+		vertical-align: middle;
+		margin-top: 10px;
+	}
+	.reserve_availavilaty{
+		width: 40px;
+		height: 40px;
+		margin: 0px auto;
+		background: #C8C8C8;
+		border-radius: 20px;
+		border: 3px solid red; 
+	}
+}
+.time_item_active{
+	background: #A9A9A9;
+}
+.date-next{
+	margin-top: 40px;
+}
+.datepicker-days table tr th{
+	text-align: center;
+}
+#datepicker{
+	min-width: 640px;
+}
+.datepicker-days tr .active{
+	background: #ff9999;
+}
+.datepicker-days tr:hover{
+	cursor: pointer;
+}
+form input[type=text], form input[type=password], form input[type=email], form input[type=number], form input[type=url], form input[type=tel], form input[type=date], form input[type=time], form textarea{
+	width: 100%;
+}
+@media (max-width: 1920px) and (min-width: 1024px){
+	.reserve-header, .reserve-main{
+		min-width: 652px;
+	}  
+
+}
+@media (max-width: 1024px){
+	.datepicker-days table tr td{
+		padding: 10px 10px;
+		font-size: 15px;
+	}  
+
+}
+
+@media (max-width: 480px){
+	.main-container{
+		padding: 10px;
+		width: 90%;
+		margin-left: 5%;
+	}
+	.reserve-header{
+		padding: 30px 0px;
+	}
+	.reserve-main{
+		padding: 10px;
+	}
+	.datepicker-days table tr td{
+		padding: 10px 10px;
+		font-size: 15px;
+	}  
+	.reserve_time_item{
+		width: 300px;
+		margin: 10px auto;
+	}
+}
+@media (max-width: 320px){
+	.datepicker-days table tr td{
+		padding: 10px 10px;
+		font-size: 12px;
+	}  
+	.reserve_time_item{
+		width: 250px;
+		margin: 10px auto;
+	}
+}
